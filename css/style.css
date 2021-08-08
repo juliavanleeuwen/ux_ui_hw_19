@@ -81,7 +81,7 @@
 
 h1 {
     font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 900;
     color: #FEBE10; 
 
@@ -89,58 +89,69 @@ h1 {
 
 h2 {
     font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 500;
-    color: #333333; 
+    color: #FEBE10; 
     font-style: italic;
 }
 
 h3 {
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 900;
-    color: #333333; 
+    color: #FEBE10; 
     
 }
 
 h4 {
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 200;
     color: #333333; 
 }
 
 p {
     font-size: 21px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'open sans', sans-serif;
     color: #333333; 
 }
 
 button {
    font-size: 24px;
-   background-color: #FEBE10;
-   color: white;
+   background-color: #333333;
+   color: #FEBE10;
    padding: 15px;
    border-radius: 10px 10px 10px 10px;
-   border-color: #FEBE10;
-   border-style: none;
+   border-color: #333333;
+   border-style: solid;
    cursor: pointer;
    
 }
 
 button:hover {
-    background-color: #333333;
-    
+    background-color: #FEBE10;
+    border-color: #FEBE10;
+    color: white;
 }
 
-.resumeButton {
+.heroButton {
     display: flex;
 }
 
-button, .resumeButton {
+button, .heroButton {
+    margin: 15px;
     align-items: center;
     justify-content: center;
 }
+
+.heroButton, img {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 /*my ux skills css*/
 
@@ -186,13 +197,20 @@ button, .resumeButton {
   
 }
 .skillsImg {
+    display: flex;
     margin: 5% auto;
-    height: 90px;
-    align-items: center;
-    justify-content: center;
-    
+    height: 90px;   
 }
 
+
+.skillsImg, img {
+    align-items: center;
+    justify-content: center;
+}
+
+.skillsImg, h3 {
+    text-align: center;
+}
 
 /*my work css*/
 
@@ -202,7 +220,8 @@ button, .resumeButton {
     grid-template-rows: 1fr;
     grid-template-areas: 
     "img1 unwind"
-    "doed img2";
+    "doed img2"
+    "img3 roadrunner";
 }
 
 
@@ -213,10 +232,21 @@ button, .resumeButton {
 .img1 {
     grid-area: img1;
     padding: 25px;
+ 
 }
 .img2 {
     grid-area: img2;
     padding: 25px;
+    
+}
+
+.img3 {
+    grid-area: img3;
+    padding: 25px;
+}
+
+.fadeMe {
+    opacity: 0.7;
 }
 
 .unwind {
@@ -229,19 +259,40 @@ button, .resumeButton {
     padding: 25px;
 }
 
+.roadrunner {
+    grid-area: roadrunner;
+    padding: 25px;
+}
+
 .projectLink {
     text-align: center;
-    font-size: 21px;
+    font-size: 24px;
+    color: #BF871F;
  
 }
 
 .projectLink:hover {
     text-align: center;
-    font-size: 21px;
+    font-size: 24px;
     color: #FEBE10;
     text-decoration-line: underline;
     cursor: pointer;
  
+}
+
+.secondaryButton {
+    font-size: 24px;
+   background-color: white;
+   color: #333333;
+   border-color: #333333;
+   border-width: 2px solid;
+}
+
+.secondaryButton:hover {
+   background-color: white;
+   color: #FEBE10;
+   border-color: #FEBE10;
+   border-width: 2px solid;
 }
 
 .viewButton {
@@ -251,6 +302,31 @@ button, .resumeButton {
 button, .viewButton {
     align-items: center;
     justify-content: center;
+}
+
+/* contact form css */
+.form-group {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 5px;  
+}
+
+.form-control {
+    border-color: #FEBE10;
+    border-style: solid;
+    border-radius: 5px 5px 5px 5px;
+    width: 500px;
+    font-size: 18px;
+    font-family: 'Open Sans' sans-serif; 
+    resize: none;
+}
+
+.formButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /*footer CSS*/
@@ -312,7 +388,9 @@ footer {
         grid-template-areas: "img1"
         "unwind"
         "img2"
-        "doed";
+        "doed"
+        "img3"
+        "roadrunner";
     }
 
     .heroImg {
@@ -350,6 +428,11 @@ footer {
         margin-top: 100px;
     }
     
+.secondaryButton {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
     h1 {
         font-size: 30px;
         padding: 10px;

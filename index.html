@@ -4,6 +4,7 @@
     <body>
 
     <header class="navigation">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Julia Van Leeuwen</title>
        
 
@@ -33,9 +34,14 @@
                 <h2>I'm a UX/UI Designer and Creative.</h2>
                     <p>I specialize in UX research, prototyping & testing, and visual design. I love creative problem solving with an empathetic and intuitive approach. My skills include Figma, XD, InVision, Photoshop & Illustrator, and Human Centered Design Thinking.</p>
   
-                      <div class="resumeButton">
+                      <div class="heroButton">
                           <button>Resume</button>
+                          <button>Contact</button>
                       </div>  
+                      <div class="heroButton">
+                        <img src="images/linkedin-black.png" width="75px" class="fadeMe">
+                        <img src="images/instagram-black.png" width="75px" class="fadeMe">
+                      </div>
                     
                     
         </div>   
@@ -51,22 +57,22 @@
 <section class="mySkills">
     <h1>My UX Skills</h1>
         <div class="flexContainer">
-            <div class="uxResearch">
+            <div class="uxResearch fadeMe">
                 <img src="images/icons8-survey.png" class="skillsImg">
                     <h3>UX Research</h3>
-                        <p>Paragraph about UX research skills here</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque euismod, varius nisl in, auctor leo. Aenean vitae placerat enim, venenatis scelerisque ligula. Fusce non justo velit. Integer efficitur ipsum a neque volutpat suscipit. Aenean vehicula nec mauris pulvinar sodales. Nulla id maximus lectus.</p>
             </div>
 
-            <div class="design">
-                <img src="images/icons-design.png" class="skillsImg">
+            <div class="design fadeMe">
+                   <img src="images/icons-design.png" class="skillsImg">
                     <h3>Visual Design</h3>
-                        <p>Paragraph about UX research skills here</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque euismod, varius nisl in, auctor leo. Aenean vitae placerat enim, venenatis scelerisque ligula. Fusce non justo velit. Integer efficitur ipsum a neque volutpat suscipit. Aenean vehicula nec mauris pulvinar sodales. Nulla id maximus lectus.</p>
             </div>
 
-            <div class="test">
+            <div class="test fadeMe">
                 <img src="images/icons8-prototype.png" class="skillsImg">
                     <h3>Prototying and Testing</h3>
-                        <p>Paragraph about UX research skills here</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque euismod, varius nisl in, auctor leo. Aenean vitae placerat enim, venenatis scelerisque ligula. Fusce non justo velit. Integer efficitur ipsum a neque volutpat suscipit. Aenean vehicula nec mauris pulvinar sodales. Nulla id maximus lectus.</p>
             </div>
         </div>
 
@@ -76,7 +82,7 @@
     <h1>My Work</h1>
         <div class="workGrid">
 
-            <div class="img1">
+            <div class="img1 fadeMe">
                 <img src="images/unwind-hero.png" alt="hero image" width="100%">  
             </div>
 
@@ -85,12 +91,12 @@
                     <p>We discovered that many adults struggle to unwind about night, leading to late nights and poor sleep. Unwind was designed to help users form better unwinding habits before bed to promote healthier sleep.</p>
                     
                     <div class="viewButton">
-                        <button>View Case Study</button>
+                        <button class="secondaryButton">View Case Study</button>
                     </div>
             </div>
 
   
-            <div class="img2">
+            <div class="img2 fadeMe">
                 <img src="images/ed-hero.png" alt="hero image" width="100%">
             </div>
      
@@ -98,7 +104,20 @@
                 <h3>U.S. Department of Education Redesign</h3>
                     <p>My UX Bootcamp gave us the challenge of redesigning a government agency website. We selected the U.S. Department of Education due to its visually disorganized appearance and lack of clear, intuitive navigation. The website has an overwhelming amount of important information geared towards students, educators, and researchers in the education sector. Redesigning to clarify, visual organize, and restructure took many steps. Read on to see how we did it all.</p>
                     <div class="viewButton">
-                        <button>View Case Study</button>
+                        <button class="secondaryButton">View Case Study</button>
+                    </div>
+            </div>
+
+            <div class="img3 fadeMe">
+                <img src="images/roadrunner.png" alt="hero image" width="100%">  
+            </div>
+
+            <div class="roadrunner">
+                <h3>Roadrunner Mobile App Design</h3>
+                    <p>The road trip planning app for the modern adventurer. Satisfy your wanderlust and never  miss an experience.</p>
+                    
+                    <div class="viewButton">
+                        <button class="secondaryButton">View Case Study</button>
                     </div>
             </div>
         </div>
@@ -106,6 +125,26 @@
         <h3 class="projectLink">View All Projects</h3>
 </section>
 
+<section>
+    <h1>Get in Touch!</h1>
+    <form>
+        <div class="form-group">
+
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+        </div>
+       
+        <div class="form-group">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+          </div>
+
+        <div class="form-group">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Your Message"></textarea></textarea>
+        </div>
+        <div class="formButton">
+            <button class="formButton">Send</button>
+        </div>
+      </form>
+</section>
 
 <!-- FOOTER SECTION -->
     <footer>
@@ -141,4 +180,6 @@
 
         
     </body>
+
+    <script src="js/index.js"></script>
 </html>
